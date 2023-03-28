@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-   <link rel="stylesheet" href="style.css">
-  </head>
-  <body> <center>
-    <div style="border: 2px solid black; width: 20%; margin: 200px;">
-      <div>
-        <input type="text" disabled id="inp" />
-      </div>
-      <div>
-        <button onclick="foo(7)" >7</button>
-        <button onclick="foo(8)">8</button>
-        <button onclick="foo(9)">9</button>
-        <button onclick="foo('+')">+</button>
-      </div>
-      <div>
-        <button onclick="foo(4)">4</button>
-        <button onclick="foo(5)">5</button>
-        <button onclick="foo(6)">6</button>
-        <button onclick="foo('-')">-</button>
-      </div>
-      <div>
-        <button onclick="foo(1)">1</button>
-        <button onclick="foo(2)">2</button>
-        <button onclick="foo(3)">3</button>
-        <button onclick="foo('/')">/</button>
-      </div>
-      <div>
-        <button onclick="foo(0)">0</button>
-        <button onclick="foo('x')">x</button>
-        <button onclick="res('=')">=</button>
-        <button onclick="clr('C')">C</button>
-      </div>
-    </div></center>
 
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="result">
+      <input type="text" name="" id="inp" disabled>
+    </div>
+    <div class="buttons">
+      <button style="background-color: rgb(196, 187, 187); color: black; " class="item clear" onclick="clr('C')">Ac</button>
+      <button style="background-color: rgb(196, 187, 187); color: black;" class="item negative" onclick="foo('+')">+/-</button>
+      <button style="background-color: rgb(196, 187, 187); color: black;" class="item persent sign" onclick="foo('%')">%</button>
+      <button style="background-color: orange;" class="item sign" onclick="foo('/')">/</button>
+      <button class="item numbers" onclick="foo(7)">7</button>
+      <button class="item numbers" onclick="foo(8)">8</button>
+      <button class="item numbers" onclick="foo(9)">9</button>
+      <button style="background-color: orange;" class="item sign" onclick="foo('*')">x</button>
+      <button class="item numbers" onclick="foo(4)">4</button>
+      <button class="item numbers" onclick="foo(5)">5</button>
+      <button class="item numbers" onclick="foo(6)">6</button>
+      <button style="background-color: orange;" class="item sign" onclick="foo('-')">-</button>
+      <button class="item numbers" onclick="foo(1)">1</button>
+      <button class="item numbers" onclick="foo(2)">2</button>
+      <button class="item numbers" onclick="foo(3)">3</button>
+      <button style="background-color: orange;" class="item sign" onclick="foo('+')">+</button>
+      <button class="item zero numbers" onclick="foo(0)">0</button>
+      <button class="item dot" onclick="foo('.')">.</button>
+      <button style="background-color: orange;" class="item equals" onclick="res('=')">=</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

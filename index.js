@@ -7,5 +7,5 @@ function res (){
     a.value = eval(a.value)
 }
 function clr(){
-    document.getElementById('inp').value = '0'
+    document.getElementById('inp').value = ''
 }
